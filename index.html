@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+  
+    <a-scene>
+        <!-- Cursor creation -->
+        <a-camera position="0 2 0" >
+            <a-cursor color="red"></a-cursor>
+        </a-camera>
+       <!-- Element box -->
+       <a-image src="./images/center/01.jpg" width="4" height="4" depth="2" position=" 0 1.5 -2.25">
+       <a-animation attribute="rotation" begin="click" to="-90 -90 -90"></a-animation>
+       </a-image>
+       <a-image src="./images/center/02.jpg" width="4" height="4" depth="2" position=" 0 1.5 2.25" rotation="0 180 0">
+       <a-animation attribute="rotation" begin="click" to="-90 -90 -90"></a-animation>
+       </a-image>
+       <a-image src="./images/center/03.jpg" width="4" height="4" depth="2" position=" -2.25 1.5 0" rotation="0 90 0">
+       <a-animation attribute="rotation" begin="click" to="-90 -90 -90"></a-animation>
+       </a-image>
+       <a-image src="./images/center/04.jpg" width="4" height="4" depth="2" position="2.25 1.5 0" rotation="0 -90 0">
+       <a-animation attribute="rotation" begin="click" to="-90 -90 -90"></a-animation>
+       </a-image>
+       
+       
+
+       <!-- Left porition of the gallery -->
+       <a-image src="./images/left/01.jpg" width="4" height="4" depth="2" position=" -10 2.5 -3" rotation="0 90 0"></a-image>
+       <a-image src="./images/left/02.jpg" width="4" height="4" depth="2" position=" -10 2.5 -9" rotation="0 90 0"></a-image>
+       <a-image src="./images/left/03.jpg" width="4" height="4" depth="2" position=" -10 2.5 3" rotation="0 90 0"></a-image>
+       <a-image src="./images/left/04.jpg" width="4" height="4" depth="2" position=" -10 2.5 9" rotation="0 90 0"></a-image>
+       
+       <!-- Front side of the gallery -->
+       <a-image src="./images/front/01.jpg" width="4" height="4" depth="2" position=" 7 2.5 -12"></a-image>
+       <a-image src="./images/front/02.jpg" width="4" height="4" depth="2" position=" 0 2.5 -12"></a-image>
+       <a-image src="./images/front/03.jpg" width="4" height="4" depth="2" position=" -7 2.5 -12"></a-image>
+
+       <!-- Right portion of the gallery -->
+       <a-image src="./images/right/01.jpg" width="4" height="4" depth="2" position=" 10 2.5 -3" rotation="0 -90 0"></a-image>
+       <a-image src="./images/right/02.jpg" width="4" height="4" depth="2" position=" 10 2.5 -9" rotation="0 -90 0"></a-image>
+       <a-image src="./images/right/03.jpg" width="4" height="4" depth="2" position=" 10 2.5 3" rotation="0 -90 0"></a-image>
+       <a-image src="./images/right/04.jpg" width="4" height="4" depth="2" position=" 10 2.5 9" rotation="0 -90 0"></a-image>
+      
+       <!-- Back side of the gallery -->
+       <a-image src="./images/back/01.jpg" width="4" height="4" depth="2" position=" 7 2.5 12" rotation="0 180 0"></a-image>
+       <a-image src="./images/back/02.jpg" width="4" height="4" depth="2" position=" 0 2.5 12" rotation="0 180 0"></a-image>
+       <a-image src="./images/back/03.jpg" width="4" height="4" depth="2" position=" -7 2.5 12" rotation="0 180 0"></a-image>
+       <!-- Ground surface -->
+       <a-plane src ="./images/ground.jpg" width="20" height="25" rotation="-90 0 0"></a-plane>
+       <!-- Remaining frame color -->
+       <a-sky color ="lightgrey" ></a-sky>
+    </a-scene>
+</body>
+
+</html>
